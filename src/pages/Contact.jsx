@@ -17,71 +17,71 @@ function Contact() {
 
     const { name, value } = e.target;
 
-  return name === 'firstName' ? setFirstName(value) : setLastName(value);
+    return name === 'firstName' ? setFirstName(value) : setLastName(value);
   };
 
-const handleFormSubmit = (e) => {
+  const handleFormSubmit = (e) => {
 
-  e.preventDefault();
+    e.preventDefault();
 
-  alert(`Hello ${firstName} ${lastName} your message was sent by you email ${email}`);
-  setFirstName('');
-  setLastName('');
-  setEmail('');
-  setMessage('');
-};
+    alert(`Hello ${firstName} ${lastName} your message was sent by you email ${email}`);
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setMessage('');
+  };
 
-return (
-  <div>
-    <h1>About Me</h1>
-    <br></br>
+  return (
+    <div>
+      <h1>About Me</h1>
+      <br></br>
 
-    <h2>Contact Lyell Curtis</h2>
-    <div className="container text-center">
-      <h1>
-        Hello {firstName} {lastName}
-      </h1>
-      <form className="form" onSubmit={handleFormSubmit}>
+      <h2>Contact Lyell Curtis</h2>
+      <div className="container text-center">
+        <h1>
+          Hello {firstName} {lastName}
+        </h1>
+        <form className="form" onSubmit={handleFormSubmit}>
 
-        <input
-          value={firstName}
-          name="firstName"
-          onChange={inputChange}
-          type="text"
-          placeholder="First Name"
-        />
+          <input
+            value={firstName}
+            name="firstName"
+            onChange={inputChange}
+            type="text"
+            placeholder="First Name"
+          />
 
-        <input
-          value={lastName}
-          name="lastName"
-          onChange={inputChange}
-          type="text"
-          placeholder="Last Name"
-        />
+          <input
+            value={lastName}
+            name="lastName"
+            onChange={inputChange}
+            type="text"
+            placeholder="Last Name"
+          />
 
-        <input
-          value={email}
-          name="email"
-          onChange={inputChange}
-          type="text"
-          placeholder="Email"
-        />
+          <input
+            value={email}
+            name="email"
+            onChange={inputChange}
+            type="text"
+            placeholder="Email"
+          />
 
-        <input
-          value={message}
-          name="message"
-          onChange={inputChange}
-          type="text"
-          placeholder="Message"
-        />
+          <input
+            value={message}
+            name="message"
+            onChange={inputChange}
+            type="text"
+            placeholder="Message"
+          />
 
-        <button type="submit">
-          Submit Message
-        </button>
-      </form>
+          <button type="submit">
+            Submit Message
+          </button>
+        </form>
+      </div>
     </div>
-  </div>
-);
+  );
 }
 
 export default Contact;
