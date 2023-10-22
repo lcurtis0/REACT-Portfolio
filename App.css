@@ -1,0 +1,125 @@
+/*
+
+Colors:
+
+Jet blue: #3C3744
+Duke blue: #090C9B
+True blue: #3066BE
+Powder blue: #B4C5E4
+Ivory: #FBFFF1
+
+*/
+
+#root {
+    padding: 2rem;
+    text-align: center;
+    --Jet-blue: #3C3744;
+    --Duke-blue: #090C9B;
+    --True-blue: #3066BE;
+    --Powder-blue: #B4C5E4;
+    --Ivory: #FBFFF1;
+
+    --header-font:'Cochin', Georgia, Times, Times New Roman, serif;
+    --font: 'Oxygen', Ubuntu, Cantarell, 'Helvetica Neue'; 
+    --radius:10px;
+}
+/*
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+ .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+} */
+
+* {
+    background-color: var(--Jet-blue);
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  header{
+    font-family: var(--True-blue);
+    border-radius: var(--radius);
+    margin-left: -35px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    align-items: center;
+    display:block;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .header-holder{
+    width: 1100px;
+  }
+
+/*where my name is */
+
+  .name-card{
+    background-color:var(--Jet-blue) ;
+    border-radius: var(--radius);
+    position: absolute;
+    float:left;
+    bottom: 175px;
+  }
+
+  .name{
+    color:var(--Ivory);
+    font-family: var(--header-font);
+  }
+
+  /*-------------------------------------------------*/
+  /* Nav section*/
+
+  nav {
+    background-color: var(--Jet-blue);
+    border-radius: var(--radius);
+    float: left;
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
+  }
+  
+  ul {
+    list-style:none;
+    position:relative;
+  }
+
+  ul li{
+    display:inline-block;
+    padding:20px;
+    /* flex adjusts by flex grow, flex shrink and flex basis [aka default width]*/
+    flex: 1 1 50px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color:var(--Ivory);
+    font-family:var(--header-font);
+    text-align: center;
+    padding:0;
+  }
+
+  ul li a:hover {
+    color:var(--Jet-blue);
+    border-radius: var(--radius);
+    background-color: var(--Duke-blue);
+    font-weight: 700;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  /* ------------------------------ */
+
+
+  
+

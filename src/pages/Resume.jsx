@@ -1,6 +1,18 @@
-<section class="part" id="Resume">
+function Resume() {
 
-<a href="./assets/images/Resume of June.pdf"><img src="./assets/images/Screenshot (105).png"
-    alt="Resume-link" class="resume-img"></a>
+    return (
+        <ul className="list-group">
+            <h1> My Reume</h1>
+            <li>
+                <img
+                    alt={result.title}
+                    className="img-fluid"
+                    src="./assets/images/Resume of June.pdf"
+                    href="./assets/images/Resume of June.pdf"
+                />
+            </li>
+        </ul>
+    )
+}
 
-</section>
+export default Resume;
