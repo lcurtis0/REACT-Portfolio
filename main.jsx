@@ -2,12 +2,14 @@
 // May have to restate ^^^^^^
 
 import ReactDOM from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App';
 import Error from './pages/Error';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Resume from './pages/Resume';
+import Portfolio from '/pages/Portfolio';
 
 // This function deturnmines the routes for each tab in the nav
 const router = createBrowserRouter([
@@ -42,6 +44,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
+    // <App router={router} />
 );
 
 // ReactDOM.createRoot(document.getElementById('root')).render(<App />);

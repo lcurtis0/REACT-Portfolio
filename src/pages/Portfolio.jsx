@@ -50,12 +50,14 @@ export default function Portfolio() {
 
       <li style={styles.assignment}>
         <a class="img-link" href="https://sjones-njones.github.io/Group-Project-1/">
+
           <img
             alt="Assignment"
             className="work-large"
             src="assets/images/Screenshots/Screenshot (147).png"
             href="./assets/images/Resume of June.pdf"
           />
+
           </a>
         <h3 style={style.heading}> - Project-1 - Home to Bitcoin Conversion </h3>
         <p  style={style.text}> - HTML / CSS / Javascript / jQuery / APIs </p>
@@ -63,12 +65,15 @@ export default function Portfolio() {
 
       <li style={styles.assignment}>
         <a class="img-link" href="https://sjones-njones.github.io/Group-Project-1/">
+
           <img
             alt="Project"
             className="work-large"
             src="assets/images/Screenshots/Screenshot (147).png"
             href="./assets/images/Resume of June.pdf"
-          /></a>
+          />
+          
+          </a>
         <p class="tag"> - Project-1 - Home to Bitcoin Conversion </p>
         <p class="tag"> - HTML / CSS / Javascript / jQuery / APIs </p>
       </li>

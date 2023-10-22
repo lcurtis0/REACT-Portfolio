@@ -1,6 +1,3 @@
-
-
-
 import { useState } from 'react';
 
 export default function Contact() {
@@ -57,6 +54,7 @@ return (
         type="text"
         placeholder="First Name"
       />
+      
       <input
         value={lastName}
         name="lastName"
