@@ -5,11 +5,11 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App';
-import Error from './pages/Error';
-import Contact from './pages/Contact';
-import About from './pages/About';
-import Resume from './pages/Resume';
-import Portfolio from '/pages/Portfolio';
+import Error from './src/pages/Error';
+import Contact from './src/pages/Contact';
+import About from './src/pages/About';
+import Resume from './src/pages/Resume';
+import Portfolio from './src/pages/Portfolio';
 
 // This function deturnmines the routes for each tab in the nav
 const router = createBrowserRouter([

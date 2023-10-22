@@ -1,33 +1,24 @@
 import { useState } from 'react';
+import './style.css';
 
-export default function Contact() {
-  return (
-    <div>
-      <h1>About Me</h1>
-      <br></br>
-      <h2>Contact Lyell Curtis</h2>
+function Contact() {
 
-      {/* form with fields for a name, an email address, and a message */}
+  {/* form with fields for a name, an email address, and a message */ }
 
-      const [firstName, setFirstName] = useState('');
+  const [firstName, setFirstName] = useState('');
 
-      const [lastName, setLastName] = useState('');
+  const [lastName, setLastName] = useState('');
 
-      const [email, setEmail] = useState('');
+  const [email, setEmail] = useState('');
 
-      const [message, setMessage] = useState('');
+  const [message, setMessage] = useState('');
 
-    </div>
-  );
-}
+  const inputChange = (e) => {
 
-const inputChange = (e) => {
-
-  const { name, value } = e.target;
-  const email = e.target;
+    const { name, value } = e.target;
 
   return name === 'firstName' ? setFirstName(value) : setLastName(value);
-};
+  };
 
 const handleFormSubmit = (e) => {
 
@@ -41,48 +32,56 @@ const handleFormSubmit = (e) => {
 };
 
 return (
-  <div className="container text-center">
-    <h1>
-      Hello {firstName} {lastName}
-    </h1>
-    <form className="form" onSubmit={handleFormSubmit}>
+  <div>
+    <h1>About Me</h1>
+    <br></br>
 
-      <input
-        value={firstName}
-        name="firstName"
-        onChange={inputChange}
-        type="text"
-        placeholder="First Name"
-      />
-      
-      <input
-        value={lastName}
-        name="lastName"
-        onChange={inputChange}
-        type="text"
-        placeholder="Last Name"
-      />
+    <h2>Contact Lyell Curtis</h2>
+    <div className="container text-center">
+      <h1>
+        Hello {firstName} {lastName}
+      </h1>
+      <form className="form" onSubmit={handleFormSubmit}>
 
-      <input
-        value={email}
-        name="email"
-        onChange={inputChange}
-        type="text"
-        placeholder="Email"
-      />
+        <input
+          value={firstName}
+          name="firstName"
+          onChange={inputChange}
+          type="text"
+          placeholder="First Name"
+        />
 
-      <input
-        value={message}
-        name="message"
-        onChange={inputChange}
-        type="text"
-        placeholder="Message"
-      />
+        <input
+          value={lastName}
+          name="lastName"
+          onChange={inputChange}
+          type="text"
+          placeholder="Last Name"
+        />
 
-      <button type="submit">
-        Submit Message
-      </button>
-    </form>
+        <input
+          value={email}
+          name="email"
+          onChange={inputChange}
+          type="text"
+          placeholder="Email"
+        />
+
+        <input
+          value={message}
+          name="message"
+          onChange={inputChange}
+          type="text"
+          placeholder="Message"
+        />
+
+        <button type="submit">
+          Submit Message
+        </button>
+      </form>
+    </div>
   </div>
 );
+}
 
+export default Contact;
