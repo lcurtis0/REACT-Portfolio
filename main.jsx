@@ -18,10 +18,11 @@ const router = createBrowserRouter([
         // There are two options: If no error go to App compontent as usual. But if there is an error send to error page
         element: <App />,
         errorElement: <Error />,
+
         // Children hold the pathes to each compontent 
         children: [
             {
-                path: '/About',
+                index: true,
                 element: <About />,
             },
             {

@@ -20,7 +20,6 @@ function App() {
         <Nav />
       </div>
 
-
       <main className="page">
         <Outlet />
       </main>

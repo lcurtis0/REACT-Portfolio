@@ -85,8 +85,15 @@ ul li a:hover {
   font-size: 18px;
 }
 
-ul li .currentPage {
+
+
+ul li .current-page {
   color: var(--Duke-blue);
+  background-color: var(--Powder-blue);
+  font-weight: 600;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: var(--radius);
 }
 
 /* ------------------------------ */
