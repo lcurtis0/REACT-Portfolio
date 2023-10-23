@@ -3,32 +3,39 @@
 
 // We set an object to assign styles and then reference in Footer() function
 
-const styles = {
-    footer: {
-      margin: 20,
-      background: '#e8eaf6',
-    },
-    heading: {
-      background: '#3f51b5',
-      minHeight: 50,
-      lineHeight: 3.5,
-      fontSize: '1.2rem',
-      color: 'white',
-      padding: '0 20px',
-    },
-    content: {
-      padding: 20,
-    },
-  };
 
 function Footer() {
-    return (
-      <div style={styles.footer}>
-        <div style={styles.content}>
-        </div>
+  return (
+    <div className="lineUp">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/lyell-curtis-936198232/">
+            <img
+              alt="LinkedIn logo"
+              className="logo"
+              src="Assets/images/linkedIn logo.png"
+              
+            />
+          </a>
+
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/lyell-curtis-936198232/">  lyell-curtis/ </a> </p>
+        </li>
+
+        <li>
+          <a href="https://github.com/lcurtis0">
+            <img
+              alt="Github logo"
+              className="logo"
+              src="Assets/images/Github logo (png).png"
+            />
+          </a>
+          <p>Github: <a href="https://github.com/lcurtis0">  lcurtis0/ </a> </p>
+        </li>
+      </ul>
+      <div >
       </div>
-    );
-  }
-  
-  export default Footer;
-  
+    </div>
+  );
+}
+
+export default Footer;

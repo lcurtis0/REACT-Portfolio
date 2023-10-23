@@ -4,12 +4,14 @@ function Resume() {
         <ul className="list-group">
             <h1> My Reume</h1>
             <li>
-                <img
-                    alt="Resume of Lyell Curtis"
-                    className="img-fluid"
-                    src="./assets/images/Resume of June.pdf"
-                    href="./assets/images/Resume of June.pdf"
-                />
+                <a href="./Assets/images/Resume of Lyell Curtis (2).pdf">
+                    <img
+                        alt="Resume of Lyell Curtis"
+                        className="Resume"
+                        src="./Assets/images/Resume.png"
+                        href="./Assets/images/Resume of Lyell Curtis (2).pdf"
+                    />
+                </a>
             </li>
         </ul>
     )

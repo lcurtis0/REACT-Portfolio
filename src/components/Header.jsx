@@ -9,8 +9,8 @@ function Header() {
           
       <img
         alt="Sand Dollar"
-        className="work-large"
-        src="assets/images/Screenshots/Screenshot (147).png"
+        className="image"
+        src="Assets/images/sanddollar.png"
         href="./assets/images/Resume of June.pdf"
       />
           <p> Assignments | Projects | Porfolios </p>

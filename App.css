@@ -16,9 +16,10 @@ Ivory: #FBFFF1
   --Jet-blue: #3C3744;
   /* backgrounds */
   --Duke-blue: #44458a;
+  /* selected */
   --True-blue: #295baa;
   /* banners */
-  --Powder-blue: #B4C5E4;
+  --Powder-blue: #91a1c0;
   /* highlights */
   --Ivory: #FBFFF1;
 
@@ -84,6 +85,10 @@ ul li a:hover {
   font-size: 18px;
 }
 
+ul li .currentPage {
+  color: var(--Duke-blue);
+}
+
 /* ------------------------------ */
 
 /* Text and Headings */
@@ -124,4 +129,36 @@ h3,
 h4,
 h5 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* ---------------------------------- */
+/* For images */
+
+.image{
+  width: 200px;
+}
+
+.Resume:hover{
+width:450px;
+padding:0px;
+margin: 0px;
+
+}
+
+.logo {
+  width: 120px;
+  background-color: #3C3744;
+}
+
+.lineUp {
+  display: inline-block;
+  text-align: center;
+  color: var(--Ivory);
+
+}
+
+.lineUp a {
+  color: var(--Ivory);
+  text-decoration: none;
+  
 }

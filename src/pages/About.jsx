@@ -10,10 +10,9 @@ export default function About() {
       </p>
 
       <img
-        alt="Project"
-        className="work-large"
-        src="assets/images/Screenshots/Screenshot (147).png"
-        href="./assets/images/Resume of June.pdf"
+        alt="Sea shell"
+        className="image"
+        src="Assets/images/shell-1.png"
       />
 
       <p>
@@ -22,10 +21,9 @@ export default function About() {
       </p>
 
       <img
-        alt="Project"
-        className="work-large"
-        src="assets/images/Screenshots/Screenshot (147).png"
-        href="./assets/images/Resume of June.pdf"
+        alt="Image of Lyell Curtis"
+        className="image"
+        src="Assets/images/Profile Photo-4.remini-enhanced.jpg"
       />
 
       <p>
