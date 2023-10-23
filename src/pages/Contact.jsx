@@ -15,8 +15,8 @@ function Contact() {
 
   const emailInput = (e) => {
     // credit to devBotPlus for email check : https://www.youtube.com/watch?v=eAIVqD02KjU&ab_channel=devBotPlus
-    const {email, value} = e.target;
- 
+    const { email, value } = e.target;
+
     return email === setEmail(value);
 
 
@@ -29,24 +29,38 @@ function Contact() {
     //   return;
     // }
 
-    
+
   }
 
   const messageInput = (e) => {
-    const {message, value} = e.target;
+    const { message, value } = e.target;
 
     return message === setMessage(value);
   }
 
   const handleFormSubmit = (e) => {
 
-    e.preventDefault();
+    if (firstName.value.length && lastName.value.length === 0) {
+      alert("Please enter at least one of the name inputs")
+      return false;
+    } else if (email.value.length === 0) {
+      alert("Please enter an email")
+      return false;
+    } else if (message.value.length === 0) {
+      alert("Please enter a message")
+      return false;
+    } else {
+      e.preventDefault();
 
-    alert(`Hello ${firstName} ${lastName} your message was sent by your email: ${email}`);
-    setFirstName('');
-    setLastName('');
-    setEmail('');
-    setMessage('');
+      alert(`Hello ${firstName} ${lastName} your message was sent by your email: ${email}`);
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setMessage('');
+      return true;
+    }
+
+
   };
 
   return (
