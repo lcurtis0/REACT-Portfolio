@@ -18,7 +18,7 @@ const styles = {
     },
   };
 
-function Footer() {
+function Header() {
     return (
       <div style={styles.footer}>
         <div style={styles.heading}>More about Lyell</div>
@@ -28,3 +28,6 @@ function Footer() {
       </div>
     );
   }
+
+  
+export default Header;
