@@ -5,23 +5,31 @@ function Contact() {
   {/* form with fields for a name, an email address, and a message */ }
 
   const [firstName, setFirstName] = useState('');
-
   const [lastName, setLastName] = useState('');
-
   const [email, setEmail] = useState('');
-
   const [message, setMessage] = useState('');
-
   const nameInputChange = (e) => {
     const { name, value } = e.target;
-
     return name === 'firstName' ? setFirstName(value) : setLastName(value);
   };
 
   const emailInput = (e) => {
+    // credit to devBotPlus for email check : https://www.youtube.com/watch?v=eAIVqD02KjU&ab_channel=devBotPlus
     const {email, value} = e.target;
-
+ 
     return email === setEmail(value);
+
+
+    // const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    // if (regex.test(email)){
+    //   return;
+    // } else if (!regex.test(email) || email === ""){
+    //   alert("Email is not valid");
+    // } else {
+    //   return;
+    // }
+
+    
   }
 
   const messageInput = (e) => {
