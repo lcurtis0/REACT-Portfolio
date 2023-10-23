@@ -1,8 +1,8 @@
 
-const Jetblue = '#3C3744'
+// const Jetblue = '#3C3744'
 const Dukeblue = '#090C9B'
-const Trueblue = '#3066BE'
-const Powderblue = '#B4C5E4'
+// const Trueblue = '#3066BE'
+// const Powderblue = '#B4C5E4'
 const Ivory = '#FBFFF1'
 
 const styles = {
@@ -34,7 +34,7 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
 
       <li style={styles.project}>
-        <a class="img-link" href="https://sjones-njones.github.io/Group-Project-1/">
+        <a href="https://sjones-njones.github.io/Group-Project-1/">
 
           <img
             alt="Project"
@@ -49,7 +49,7 @@ export default function Portfolio() {
       </li>
 
       <li style={styles.assignment}>
-        <a class="img-link" href="https://sjones-njones.github.io/Group-Project-1/">
+        <a href="https://sjones-njones.github.io/Group-Project-1/">
 
           <img
             alt="Assignment"
@@ -64,7 +64,7 @@ export default function Portfolio() {
       </li>
 
       <li style={styles.assignment}>
-        <a class="img-link" href="https://sjones-njones.github.io/Group-Project-1/">
+        <a href="https://sjones-njones.github.io/Group-Project-1/">
 
           <img
             alt="Project"
@@ -74,20 +74,20 @@ export default function Portfolio() {
           />
           
           </a>
-        <p class="tag"> - Project-1 - Home to Bitcoin Conversion </p>
-        <p class="tag"> - HTML / CSS / Javascript / jQuery / APIs </p>
+        <p> - Project-1 - Home to Bitcoin Conversion </p>
+        <p> - HTML / CSS / Javascript / jQuery / APIs </p>
       </li>
 
       <li style={styles.assignment}>
-        <a class="img-link" href="https://sjones-njones.github.io/Group-Project-1/">
+        <a href="https://sjones-njones.github.io/Group-Project-1/">
           <img
             alt="Project"
             className="work-large"
             src="assets/images/Screenshots/Screenshot (147).png"
             href="./assets/images/Resume of June.pdf"
           /></a>
-        <p class="tag"> - Project-1 - Home to Bitcoin Conversion </p>
-        <p class="tag"> - HTML / CSS / Javascript / jQuery / APIs </p>
+        <p> - Project-1 - Home to Bitcoin Conversion </p>
+        <p> - HTML / CSS / Javascript / jQuery / APIs </p>
       </li>
 
 

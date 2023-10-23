@@ -12,18 +12,29 @@ function Contact() {
 
   const [message, setMessage] = useState('');
 
-  const inputChange = (e) => {
-
+  const nameInputChange = (e) => {
     const { name, value } = e.target;
 
     return name === 'firstName' ? setFirstName(value) : setLastName(value);
   };
 
+  const emailInput = (e) => {
+    const {email, value} = e.target;
+
+    return email === setEmail(value);
+  }
+
+  const messageInput = (e) => {
+    const {message, value} = e.target;
+
+    return message === setMessage(value);
+  }
+
   const handleFormSubmit = (e) => {
 
     e.preventDefault();
 
-    alert(`Hello ${firstName} ${lastName} your message was sent by you email ${email}`);
+    alert(`Hello ${firstName} ${lastName} your message was sent by your email: ${email}`);
     setFirstName('');
     setLastName('');
     setEmail('');
@@ -32,20 +43,20 @@ function Contact() {
 
   return (
     <div>
-      <h1>About Me</h1>
-      <br></br>
+      <h1>Contact</h1>
+      <hr></hr>
 
-      <h2>Contact Lyell Curtis</h2>
+      <h2>Feel free to reach out</h2>
       <div className="container text-center">
-        <h1>
+        <h3>
           Hello {firstName} {lastName}
-        </h1>
+        </h3>
         <form className="form" onSubmit={handleFormSubmit}>
 
           <input
             value={firstName}
             name="firstName"
-            onChange={inputChange}
+            onChange={nameInputChange}
             type="text"
             placeholder="First Name"
           />
@@ -53,7 +64,7 @@ function Contact() {
           <input
             value={lastName}
             name="lastName"
-            onChange={inputChange}
+            onChange={nameInputChange}
             type="text"
             placeholder="Last Name"
           />
@@ -61,15 +72,15 @@ function Contact() {
           <input
             value={email}
             name="email"
-            onChange={inputChange}
+            onChange={emailInput}
             type="text"
             placeholder="Email"
           />
 
-          <input
+          <input className='Message'
             value={message}
             name="message"
-            onChange={inputChange}
+            onChange={messageInput}
             type="text"
             placeholder="Message"
           />
