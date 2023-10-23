@@ -59,8 +59,8 @@ export default function Portfolio() {
           />
 
           </a>
-        <h3 style={style.heading}> - Project-1 - Home to Bitcoin Conversion </h3>
-        <p  style={style.text}> - HTML / CSS / Javascript / jQuery / APIs </p>
+        <h3 style={styles.heading}> - Project-1 - Home to Bitcoin Conversion </h3>
+        <p  style={styles.text}> - HTML / CSS / Javascript / jQuery / APIs </p>
       </li>
 
       <li style={styles.assignment}>

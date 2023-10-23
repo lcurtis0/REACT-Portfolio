@@ -24,9 +24,7 @@ const styles = {
 function Footer() {
     return (
       <div style={styles.footer}>
-        <div style={styles.heading}>More about Lyell</div>
         <div style={styles.content}>
-          `On the front-end, Lyell is a master of user interface (UI) design and development. He creates visually appealing and user-friendly websites that engage and captivate visitors. His proficiency in HTML, CSS, and JavaScript allows him to craft responsive and interactive web interfaces `
         </div>
       </div>
     );

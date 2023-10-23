@@ -49,7 +49,7 @@ function Contact() {
       <h2>Feel free to reach out</h2>
       <div className="container text-center">
         <h3>
-          Hello {firstName} {lastName}
+          Hello... {firstName} {lastName}
         </h3>
         <form className="form" onSubmit={handleFormSubmit}>
 
