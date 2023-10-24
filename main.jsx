@@ -1,5 +1,4 @@
 // This file will hold the pathes to ecah tab in the navbar and renders the router 
-// May have to restate ^^^^^^
 
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -41,11 +40,7 @@ const router = createBrowserRouter([
     }
 ])
 
-// Need explination here
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
-    // <App router={router} />
 );
-
-// ReactDOM.createRoot(document.getElementById('root')).render(<App />);

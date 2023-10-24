@@ -24,7 +24,7 @@ N/A
 
 Must "npm i" then
 
-npm build to make d dist folder
+npm build to make dist folder
 
 Users have to run "npm run start" to activate package.jsons 
 
