@@ -42,7 +42,9 @@ credit to devBotPlus for email check : https://www.youtube.com/watch?v=eAIVqD02K
 # Deployment
 Evaluated environment url:  https://lcurtis0.github.io/REACT-Portfolio/
 
-Heroku: 
+Netlify deployment: https://benevolent-druid-e681e4.netlify.app/
+
+Netlify site: https://app.netlify.com/sites/benevolent-druid-e681e4/deploys
 
 Badges
 N/A
