@@ -124,6 +124,23 @@ export default function Portfolio() {
       </li>
 
 
+        <li style={styles.project}>
+        <a href="https://sediam.github.io/PhotoShopIt/">
+
+          <img
+            alt="Project"
+            className="image"
+            src="assets/images/Github logo (png).png"
+          />
+
+          </a>
+          <a href="https://github.com/SediaM/PhotoShopIt"> Click to view Github </a>
+        <h3 style={styles.heading}> - Project-3 - Foto Flip </h3>
+        <p  style={styles.text}> - HTML / CSS / Javascript / Express / React </p>
+        <p>Heroku: https://photo-shop-it-b7b28611be34.herokuapp.com/</p>
+      </li>
+
+
     </ul>
   );
 }
