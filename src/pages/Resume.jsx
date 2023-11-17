@@ -2,7 +2,7 @@ function Resume() {
 
     return (
         <ul className="list-group">
-            <h1> My Reume</h1>
+            <h1> My Resume</h1>
             <hr></hr>
             <li>
                 <a href="./Assets/images/Resume of Lyell Curtis (2).pdf">
